@@ -1,2 +1,2 @@
 # Designalytics
-Fully responsive front end -- personal project
+Fully responsive front end using Sass -- personal project

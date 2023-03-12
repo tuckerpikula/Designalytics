@@ -1,1 +1,37 @@
+@use 'variables';
 @use 'global';
+
+
+// Header
+
+header.primary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circlePic {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hamburger {
+    width: 42px;
+}
+
+.header-right nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+header.primary, .user {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+a.logo img {
+    width: 170px;
+}

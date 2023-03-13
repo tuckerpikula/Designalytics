@@ -104,7 +104,8 @@
                     <ul>
                         <li>
                             <div class="user-left">
-                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="users">
+                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    alt="users">
                                 <div class="user-info">
                                     <strong>Jane Doe</strong>
                                     <span>Google Ads</span>
@@ -116,7 +117,8 @@
                         </li>
                         <li>
                             <div class="user-left">
-                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="users">
+                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    alt="users">
                                 <div class="user-info">
                                     <strong>Jane Doe</strong>
                                     <span>Google Ads</span>
@@ -128,7 +130,8 @@
                         </li>
                         <li>
                             <div class="user-left">
-                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="users">
+                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    alt="users">
                                 <div class="user-info">
                                     <strong>Jane Doe</strong>
                                     <span>Google Ads</span>
@@ -140,7 +143,8 @@
                         </li>
                         <li>
                             <div class="user-left">
-                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="users">
+                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    alt="users">
                                 <div class="user-info">
                                     <strong>Jane Doe</strong>
                                     <span>Google Ads</span>
@@ -152,7 +156,8 @@
                         </li>
                         <li>
                             <div class="user-left">
-                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="users">
+                                <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    alt="users">
                                 <div class="user-info">
                                     <strong>Jane Doe</strong>
                                     <span>Google Ads</span>
@@ -173,13 +178,17 @@
         const exitBtn = document.querySelector('.exit')
         const menu = document.querySelector('aside')
 
-        menuBtn.addEventListener('click', function(e) {
+        menu.style.visibility = "hidden"; // Add this line to hide the menu by default
+
+        menuBtn.addEventListener('click', function (e) {
             e.preventDefault();
             menu.classList.toggle('toggle-menu');
+            menu.style.visibility = "visible" // Add this line to show the menu when it's toggled
         })
-        exitBtn.addEventListener('click', function(e) {
+        exitBtn.addEventListener('click', function (e) {
             e.preventDefault();
             menu.classList.toggle('toggle-menu');
+            menu.style.visibility = "hidden"; // Add this line to hide the menu when it's toggled off
         })
     </script>
 </body>

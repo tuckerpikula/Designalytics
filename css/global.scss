@@ -35,6 +35,10 @@ svg {width: 100%;}
     display: none;
 }
 
+.toggle-menu {
+    transform: translate(0);
+}
+
 @media only screen and (min-width: 620px) {
     .hide-tablet {
         display: none;

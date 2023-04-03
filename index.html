@@ -178,17 +178,13 @@
         const exitBtn = document.querySelector('.exit')
         const menu = document.querySelector('aside')
 
-        menu.style.visibility = "hidden"; // Add this line to hide the menu by default
-
-        menuBtn.addEventListener('click', function (e) {
+        menuBtn.addEventListener('click', function(e) {
             e.preventDefault();
             menu.classList.toggle('toggle-menu');
-            menu.style.visibility = "visible" // Add this line to show the menu when it's toggled
         })
-        exitBtn.addEventListener('click', function (e) {
+        exitBtn.addEventListener('click', function(e) {
             e.preventDefault();
             menu.classList.toggle('toggle-menu');
-            menu.style.visibility = "hidden"; // Add this line to hide the menu when it's toggled off
         })
     </script>
 </body>
